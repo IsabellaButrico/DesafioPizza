@@ -1,10 +1,12 @@
 package rm77273.listview.exercicios.fiap.com.br.desafio;
 
+import java.io.Serializable;
+
 /**
  * Created by logonrm on 30/03/2017.
  */
 
-public class Pizza {
+public class Pizza  implements Serializable {
 
     private String nome;
     private String descricao;
@@ -12,15 +14,17 @@ public class Pizza {
     private String pontuacao;
     private String alergia;
     private int imgpizza;
+    private String valorp;
 
-
-    public Pizza(String nome, String descricao, String ingredientes, String pontuacao, String alergia, int imgpizza) {
+    public Pizza(String nome, String descricao, String ingredientes, String pontuacao, String alergia, int imgpizza, String valorp) {
         this.nome = nome;
         this.descricao = descricao;
         this.ingredientes = ingredientes;
         this.pontuacao = pontuacao;
         this.alergia = alergia;
         this.imgpizza = imgpizza;
+        this.valorp = valorp;
+
     }
 
     public String getNome() {
@@ -39,14 +43,6 @@ public class Pizza {
         this.descricao = descricao;
     }
 
-    public String getIngredientes() {
-        return ingredientes;
-    }
-
-    public void setIngredientes(String ingredientes) {
-        this.ingredientes = ingredientes;
-    }
-
     public String getPontuacao() {
         return pontuacao;
     }
@@ -55,12 +51,12 @@ public class Pizza {
         this.pontuacao = pontuacao;
     }
 
-    public String getAlergia() {
-        return alergia;
+    public String getIngredientes() {
+        return ingredientes;
     }
 
-    public void setAlergia(String alergia) {
-        this.alergia = alergia;
+    public void setIngredientes(String ingredientes) {
+        this.ingredientes = ingredientes;
     }
 
     public int getImgpizza() {
@@ -70,4 +66,21 @@ public class Pizza {
     public void setImgpizza(int imgpizza) {
         this.imgpizza = imgpizza;
     }
+
+    public String getValorp() {
+        return valorp;
+    }
+
+    public void setValorp(String valorp) {
+        this.valorp = valorp;
+    }
+
+    public String getAlergia() {
+        return alergia;
+    }
+
+    public void setAlergia(String alergia) {
+        this.alergia = alergia;
+    }
 }
+

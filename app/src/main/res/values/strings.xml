@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Desafio</string>
+    <string name="pizza_app">pizza_app</string>
+    <string name="welcome">welcome</string>
+    <string name="segundos">segundos</string>
+    <string name="splash">splash</string>
+    <string name="aplicativo_pizza">Aplicativo Pizza</string>
+    <string name="escolha_sua_pizza">Escolha sua Pizza</string>
+    <string name="name">Aplicativo Pizza</string>
 </resources>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplanScren">
+    >
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/fundo"
+        android:scaleType="centerCrop"/>
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/aplicativo_pizza"
+            android:textSize="80dp"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"
+            android:textColor="#000"/>
+
+    <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/escolha_sua_pizza"
+               android:textSize="60dp"
+               android:layout_marginTop="200dp"
+               android:textAlignment="center"
+               android:textColor="#000"/>
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -47,14 +47,19 @@ public class InfoPizza extends BaseAdapter{
 
         Pizza pizza = this.pizza.get(i);
 
-        View v = LayoutInflater.from(this.context).inflate(R.layout.listview_pizza, null);
+       // View v = layoutInflater.from(this.context).inflate(R.layout.listview_pizza, null);
+        View v = layoutInflater.inflate(R.layout.listview_pizza, null);
+
         ImageView imageView = (ImageView) v.findViewById(R.id.Pizza1);
         TextView txtNomePizza = (TextView) v.findViewById(R.id.txtNomePizza);
-        TextView txtDescricaoPizza = (TextView) v.findViewById(R.id.txtDescricaoPizza);
+        TextView txtValor = (TextView) v.findViewById(R.id.txtValor);
+
+
 
         imageView.setImageResource(pizza.getImgpizza());
         txtNomePizza.setText(pizza.getNome());
-        txtDescricaoPizza.setText(pizza.getDescricao());
+        txtValor.setText(pizza.getValorp());
+
 
         return v;
 
