@@ -21,6 +21,7 @@ public class PizzaActivity  extends AppCompatActivity {
         TextView txtValor;
             TextView txtIngredientes;
     TextView txtPontuacao;
+    TextView txtAlergia;
         RatingBar ratingbar;
 
 
@@ -45,12 +46,14 @@ public class PizzaActivity  extends AppCompatActivity {
             txtValor = (TextView)findViewById(R.id.txtValor);
             txtIngredientes = (TextView) findViewById(R.id.txtIngredientes);
             txtPontuacao = (TextView) findViewById(R.id.txtPontuacao);
+            txtAlergia = (TextView) findViewById(R.id.txtAlergia);
 
             imgPizza.setImageResource(pizza.getImgpizza());
             txtNome.setText(pizza.getNome());
             txtValor.setText(pizza.getValorp());
             txtIngredientes.setText(pizza.getIngredientes());
             txtPontuacao.setText(pizza.getPontuacao());
+            txtAlergia.setText(pizza.getAlergia());
 
 
         }
